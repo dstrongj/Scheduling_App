@@ -1,6 +1,10 @@
 # Scheduling_App
 
 
-Username       Password
-_______________________
-admin          password
+
+
+Appointment scheduling app
+
+
+username: admin
+password: password
