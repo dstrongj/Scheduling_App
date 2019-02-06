@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" stylesheets="css/addAppointment.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.AppointmentAddController">
+   <children>
+      <Label layoutX="158.0" layoutY="19.0" text="New Appointment" textFill="WHITE">
+         <font>
+            <Font name="Lucida Sans Regular" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="168.0" layoutY="108.0" text="Client" textFill="WHITE">
+         <font>
+            <Font name="Lucida Sans Regular" size="12.0" />
+         </font></Label>
+      <TextField fx:id="customerAllName" editable="false" layoutX="226.0" layoutY="104.0" prefHeight="25.0" prefWidth="213.0" />
+      <Label layoutX="67.0" layoutY="229.0" text="Date" textFill="WHITE">
+         <font>
+            <Font name="Lucida Sans Regular" size="12.0" />
+         </font></Label>
+      <DatePicker fx:id="date" layoutX="116.0" layoutY="225.0" prefHeight="25.0" prefWidth="150.0" />
+      <Label layoutX="58.0" layoutY="301.0" text="Contact" textFill="WHITE">
+         <font>
+            <Font name="Lucida Sans Regular" size="12.0" />
+         </font></Label>
+      <Label layoutX="342.0" layoutY="229.0" text="Time" textFill="WHITE">
+         <font>
+            <Font name="Lucida Sans Regular" size="12.0" />
+         </font></Label>
+      <ComboBox fx:id="time" layoutX="397.0" layoutY="225.0" prefWidth="150.0" />
+      <ComboBox fx:id="contact" layoutX="119.0" layoutY="297.0" onAction="#handleLocation" prefWidth="150.0" />
+      <Label layoutX="100.0" layoutY="161.0" text="Appointment Type" textFill="WHITE">
+         <font>
+            <Font name="Lucida Sans Regular" size="12.0" />
+         </font></Label>
+      <ComboBox fx:id="type" layoutX="226.0" layoutY="157.0" prefHeight="25.0" prefWidth="213.0" />
+      <Label layoutX="332.0" layoutY="301.0" text="Location" textFill="WHITE">
+         <font>
+            <Font name="Lucida Sans Regular" size="12.0" />
+         </font></Label>
+      <TextField fx:id="location" editable="false" layoutX="397.0" layoutY="297.0" />
+   </children>
+</AnchorPane>

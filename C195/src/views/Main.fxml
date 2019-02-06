@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="356.0" prefWidth="400.0" stylesheets="css/main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.MainController">
+   <children>
+      <Label layoutX="71.0" layoutY="253.0" text="Application Management" textFill="WHITE">
+         <font>
+            <Font name="Lucida Sans Regular" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="100.0" layoutY="45.0" mnemonicParsing="false" onAction="#handleCustomerButton" prefHeight="27.0" prefWidth="185.0" text="Client Management">
+         <effect>
+            <InnerShadow color="#0000008a" />
+         </effect></Button>
+      <Button layoutX="100.0" layoutY="107.0" mnemonicParsing="false" onAction="#handleAppointmentButton" prefHeight="27.0" prefWidth="185.0" text="Appointment Management">
+         <effect>
+            <InnerShadow color="#0000008a" />
+         </effect></Button>
+      <Button layoutX="100.0" layoutY="168.0" mnemonicParsing="false" onAction="#handleReportsButton" prefHeight="27.0" prefWidth="185.0" text="Client Reports">
+         <effect>
+            <InnerShadow color="#0000008a" />
+         </effect></Button>
+      <Button layoutX="114.0" layoutY="309.0" mnemonicParsing="false" onAction="#handleLogsButton" prefHeight="25.0" prefWidth="152.0" text="Generate Log File">
+         <effect>
+            <InnerShadow color="#0000008a" />
+         </effect>
+      </Button>
+      <Line endX="100.0" layoutX="192.0" layoutY="223.0" startX="-100.0" />
+   </children>
+</AnchorPane>

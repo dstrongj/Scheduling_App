@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="appointmentMain" prefHeight="650.0" prefWidth="800.0" stylesheets="css/appointmentMain.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.AppointmentMainController">
+   <children>
+      <TabPane fx:id="tabs" layoutX="243.0" layoutY="68.0" prefHeight="517.0" prefWidth="554.0" style="-fx-border-color: #000000;" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="monthly" text="Appoinments Monthly">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="423.0" prefWidth="552.0">
+                     <children>
+                        <TableView fx:id="monthAptTable" layoutX="31.0" layoutY="51.0" prefHeight="420.0" prefWidth="491.0">
+                          <columns>
+                            <TableColumn fx:id="monthDescription" prefWidth="105.0" text="Description" />
+                              <TableColumn fx:id="monthContact" prefWidth="75.0" text="Contact" />
+                              <TableColumn fx:id="monthLocation" prefWidth="75.0" text="Location" />
+                              <TableColumn fx:id="monthStart" prefWidth="120.0" text="Start" />
+                              <TableColumn fx:id="monthEnd" prefWidth="115.0" text="End" />
+                          </columns>
+                        </TableView>
+                        <Label fx:id="monthCustomerLabel" layoutX="104.0" layoutY="18.0" text="None" textFill="WHITE">
+                           <font>
+                              <Font name="Lucida Sans Regular" size="16.0" />
+                           </font></Label>
+                        <Label layoutX="49.0" layoutY="17.0" text="Client:" textFill="WHITE">
+                           <font>
+                              <Font name="Lucida Sans Regular" size="16.0" />
+                           </font></Label>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Appointments Weekly">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="weekAptTable" layoutX="31.0" layoutY="51.0" prefHeight="417.0" prefWidth="491.0">
+                          <columns>
+                            <TableColumn fx:id="weekDescription" prefWidth="105.0" text="Description" />
+                              <TableColumn fx:id="weekContact" prefWidth="75.0" text="Contact" />
+                              <TableColumn fx:id="weekLocation" prefWidth="75.0" text="Location" />
+                              <TableColumn fx:id="weekStart" prefWidth="124.0" text="Start" />
+                              <TableColumn fx:id="weekEnd" prefWidth="110.0" text="End" />
+                          </columns>
+                        </TableView>
+                        <Label layoutX="49.0" layoutY="17.0" text="Client:" textFill="WHITE">
+                           <font>
+                              <Font name="Lucida Sans Regular" size="16.0" />
+                           </font></Label>
+                        <Label fx:id="weekCustomerLabel" layoutX="108.0" layoutY="18.0" text="None" textFill="WHITE">
+                           <font>
+                              <Font name="Lucida Sans Regular" size="16.0" />
+                           </font></Label>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Label layoutX="231.0" layoutY="14.0" text="Confirmed Appointments" textFill="WHITE">
+         <font>
+            <Font name="Lucida Sans Regular" size="30.0" />
+         </font>
+      </Label>
+      <Button layoutX="676.0" layoutY="611.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="25.0" prefWidth="85.0" text="Back">
+         <effect>
+            <InnerShadow color="#0000008a" />
+         </effect></Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d3d3d3" height="236.0" layoutX="11.0" layoutY="350.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Button layoutX="17.0" layoutY="426.0" mnemonicParsing="false" onAction="#handleAddButton" prefHeight="25.0" prefWidth="190.0" text="Schedule Appointment">
+         <effect>
+            <InnerShadow color="#0000008a" />
+         </effect></Button>
+      <Button layoutX="17.0" layoutY="485.0" mnemonicParsing="false" onAction="#handleModifyButton" prefHeight="25.0" prefWidth="190.0" text="Update Appointment">
+         <effect>
+            <InnerShadow color="#0000008a" />
+         </effect>
+      </Button>
+      <Button layoutX="17.0" layoutY="547.0" mnemonicParsing="false" onAction="#handleDeleteButton" prefHeight="25.0" prefWidth="190.0" text="Cancel Appointment" textFill="RED">
+         <effect>
+            <InnerShadow color="#0000008a" />
+         </effect>
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="27.0" layoutY="370.0" text="Manage Appointment">
+         <font>
+            <Font name="Lucida Sans Regular" size="16.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="3.0" layoutY="67.0" prefHeight="262.0" prefWidth="234.0">
+         <children>
+            <TableView fx:id="customerAllTable" layoutX="2.0" layoutY="4.0" onMouseClicked="#handleCustomerClick" prefHeight="243.0" prefWidth="228.0">
+              <columns>
+                <TableColumn fx:id="customerAllId" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="customerAllName" prefWidth="152.0" text="Customer" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

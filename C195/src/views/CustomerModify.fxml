@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="300.0" prefWidth="600.0" stylesheets="css/customerModify.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.CustomerModifyController">
+   <children>
+      <Label layoutX="104.0" layoutY="16.0" text="Update Client Information" textFill="WHITE">
+         <font>
+            <Font name="Lucida Sans Regular" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="name" layoutX="226.0" layoutY="86.0" />
+      <TextField fx:id="address" layoutX="226.0" layoutY="129.0" />
+      <TextField fx:id="country" editable="false" layoutX="360.0" layoutY="175.0" />
+      <TextField fx:id="zip" layoutX="107.0" layoutY="239.0" />
+      <TextField fx:id="phone" layoutX="360.0" layoutY="239.0" />
+      <ComboBox fx:id="city" layoutX="106.0" layoutY="175.0" onAction="#setCountry" prefWidth="150.0" />
+      <Label layoutX="172.0" layoutY="90.0" text="Name" textFill="WHITE">
+         <font>
+            <Font name="Lucida Sans Regular" size="12.0" />
+         </font></Label>
+      <Label layoutX="160.0" layoutY="133.0" text="Address" textFill="WHITE">
+         <font>
+            <Font name="Lucida Sans Regular" size="12.0" />
+         </font></Label>
+      <Label layoutX="71.0" layoutY="179.0" text="City" textFill="WHITE">
+         <font>
+            <Font name="Lucida Sans Regular" size="12.0" />
+         </font></Label>
+      <Label layoutX="311.0" layoutY="179.0" text="Country" textFill="WHITE">
+         <font>
+            <Font name="Lucida Sans Regular" size="12.0" />
+         </font></Label>
+      <Label layoutX="47.0" layoutY="243.0" text="Zip Code" textFill="WHITE">
+         <font>
+            <Font name="Lucida Sans Regular" size="12.0" />
+         </font></Label>
+      <Label layoutX="315.0" layoutY="243.0" text="Phone" textFill="WHITE">
+         <font>
+            <Font name="Lucida Sans Regular" size="12.0" />
+         </font></Label>
+   </children>
+</AnchorPane>
